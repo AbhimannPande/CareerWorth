@@ -60,6 +60,20 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Stylish header with gradient and tagline
+st.markdown("""
+<div style="background: linear-gradient(to right, #2563eb, #1e40af); 
+            padding: 1.2rem 2rem; border-radius: 12px; margin-bottom: 2rem;">
+    <h1 style="color: white; margin: 0; font-size: 2.5rem;">
+        💼 CareerWorth
+    </h1>
+    <p style="color: #dbeafe; margin: 0; font-size: 1.1rem;">
+        Unlock your earning potential, globally.
+    </p>
+</div>
+""", unsafe_allow_html=True)
+
+
 # Sidebar
 with st.sidebar:
     st.title("📊 Salary Insights")
@@ -78,7 +92,7 @@ with st.sidebar:
     - Country-specific benchmarks
     - Senior worker considerations
 
-    *Data sources: OECD, World Bank, and national labor statistics*
+    
     """)
     st.divider()
     st.markdown("""
@@ -88,7 +102,7 @@ with st.sidebar:
     3. Consider typical work hours
     """)
     st.divider()
-    st.caption("© 2023 CareerWorth | v2.1.0")
+    st.caption("© 2025 CareerWorth | v2.1.0")
 
 # ================
 # Tabs: Input, Download, Feedback
